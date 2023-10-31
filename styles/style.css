@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 1400px;
+    margin: auto;
+    background-color: #ccc;
+}
+
+header {     
+    width: 90%;
+}
+
+nav {
+    height: 10rem;
+}
+
+.ul-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.ul-list .logo img, footer .logo{
+    width: 200px;
+    height: 130px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.ul-list li a {
+    text-decoration: none;
+    color: #336B87;
+    font-size: 1.3rem;
+}
+
+.ul-list li a:hover{
+    font-weight: 500;
+}
+
+.seccion-central {
+    width:100%;
+    height: 600px;
+    margin: auto;
+    background: url(../imagenes/header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+}
+
+.titulo-central{
+    padding-top: 3rem;
+    font-size: 4rem;
+}
+
+.btn-central{
+    border: 2px solid #336B87;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: transparent;
+    color:  #070f12;
+    padding: 5px;
+}
+
+.btn-central:hover{
+    border: 3px solid #336B87;
+}
+
+.seccion-formulario{
+    height: 1000px;
+    padding: 5rem;
+    background-color: #b3b3b3;
+}
+
+.input, .btn-formulario {
+    display: block;
+    width: 95%;
+    margin: 20px;
+    padding: 9px;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    background-color: #f5f1f1;
+    color: #070f12;
+    font-size: 1.3rem;
+}
+
+.texto-form{
+    display: block;
+    margin: 20px;
+    padding: 9px;
+    color: #070f12;
+    font-size: 1.5rem;
+}
+
+.contenedor-radio{
+    display: flex;
+    gap: 10rem;
+}
+
+.texto-form{
+    padding: 3rem 0;
+}
+
+
+.input:focus{
+    outline: none;
+    border:2px solid #336B87;
+}
+
+.radio1, .radio2, .radio3 {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="radio"] {
+    width: 20px;
+    margin-left: 15px;
+}
+
+.label-radio {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.texto{
+    font-size: 20px;
+}
+
+.btn-formulario{
+    margin: 3rem 0;;
+}
+
+.btn-formulario:hover{
+    background-color: #336B87;
+    color: #ccc;
+} 
+
+footer {
+    background-color: #808080;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon-bar i{
+    padding: 12px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.icon-bar i:hover{
+    color: #26566e;
+}
+
+@media all and (min-width:768px) and (max-width: 1400px){
+    
+    body{
+        width: 100%;
+    }
+
+}
+
+
